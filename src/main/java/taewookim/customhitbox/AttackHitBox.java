@@ -30,6 +30,12 @@ public class AttackHitBox extends HitBox {
         World w = getChunk().getWorld();
         w.spawnParticle(Particle.FLAME, hitX, hitY, hitZ, 10, 0, 0, 0, 0.05);
         w.playSound(new Location(w, hitX, hitY, hitZ), Sound.BLOCK_ANVIL_PLACE, 1, 2);
-        setEnd();
+        //setEnd();
+    }
+
+    @Override
+    public void update() {
+        super.update();
+        summonParticle();
     }
 }
