@@ -53,6 +53,7 @@ public class AttackOrDepend implements Listener {
     public void damage(EntityDamageByEntityEvent e) {
         if(e.getDamager() instanceof Player p) {
             left(p);
+            e.setCancelled(true);
         }
     }
 
