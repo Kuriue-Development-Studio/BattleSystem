@@ -13,6 +13,7 @@ public class AttackHitBox extends HitBox {
 
     @Override
     protected void enterHitBox(Entity entity) {
+        System.out.println("a");
         if(entity instanceof LivingEntity le) {
             le.damage(2);
         }
