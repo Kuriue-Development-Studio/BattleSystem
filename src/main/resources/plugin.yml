@@ -2,3 +2,6 @@ name: BattleSystem
 version: Umm...
 api-version: 1.20
 main: taewookim.BattleSystemPlugin
+
+depend:
+  - HitBoxUtile
