@@ -7,6 +7,8 @@ import taewookim.collisiondetector.PolygonCollisionDetector;
 import util.PolygonDetectorBuilder;
 import util.TriangleMath;
 
+import java.util.Random;
+
 public class AttackPolygon {
 
     private final static double[] polygon;
@@ -41,10 +43,10 @@ public class AttackPolygon {
         Location ploc = p.getLocation();
         double yaw = ploc.getYaw();
         double pitch = ploc.getPitch();
-        Vector loc = ploc.toVector();
+        Vector loc = ploc.add(0, 1.5, 0).toVector();
         for(int i = 0; i<6; i++) {
             int a = i*3;
-            builder.addPoint(rotate(polygon[a], polygon[a+1], polygon[a+2], yaw, pitch, 0).add(loc));
+            builder.addPoint(rotate(polygon[a], polygon[a+1], polygon[a+2], yaw, pitch, new Random().nextDouble()*360).add(loc));
         }
         return builder.build();
     }
