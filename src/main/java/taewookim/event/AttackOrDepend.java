@@ -18,7 +18,9 @@ public class AttackOrDepend implements Listener {
     }
 
     public static void left(Player p) {
+        System.out.println("a");
         if(!isCooldown(p)&&p.getItemInHand()!=null&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
+            System.out.println("b");
             HitBoxBuilder builder = new HitBoxBuilder();
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
