@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="다시...">
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="히트박스 생성위치 수정, 좀 더 랜덤적으로">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackPolygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackPolygon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +172,8 @@
       <workItem from="1713095368774" duration="1811000" />
       <workItem from="1713097333965" duration="2316000" />
       <workItem from="1713099880376" duration="328000" />
+      <workItem from="1713100978870" duration="135000" />
+      <workItem from="1713101119953" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -244,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713100058919</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="히트박스 생성위치 수정, 좀 더 랜덤적으로">
+      <option name="closed" value="true" />
+      <created>1713101094987</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713101094987</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +271,7 @@
     <MESSAGE value="공격시 캔슬" />
     <MESSAGE value="작동되고 있는거 맞나요" />
     <MESSAGE value="다시..." />
-    <option name="LAST_COMMIT_MESSAGE" value="다시..." />
+    <MESSAGE value="히트박스 생성위치 수정, 좀 더 랜덤적으로" />
+    <option name="LAST_COMMIT_MESSAGE" value="히트박스 생성위치 수정, 좀 더 랜덤적으로" />
   </component>
 </project>
