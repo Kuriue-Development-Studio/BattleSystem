@@ -2,6 +2,8 @@ package taewookim.customhitbox;
 
 import org.bukkit.Location;
 import org.bukkit.Particle;
+import org.bukkit.Sound;
+import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import taewookim.hitbox.HitBox;
@@ -25,6 +27,9 @@ public class AttackHitBox extends HitBox {
 
     @Override
     protected void collisionHitBox(HitBox hitBox) {
-        getChunk().getWorld().spawnParticle(Particle.FLAME, hitX, hitY, hitZ, 10, 0, 0, 0, 0.05);
+        World w = getChunk().getWorld();
+        w.spawnParticle(Particle.FLAME, hitX, hitY, hitZ, 10, 0, 0, 0, 0.05);
+        w.playSound(new Location(w, hitX, hitY, hitZ), Sound.ENTITY_BLAZE_HURT, 1, 1);
+        setEnd();
     }
 }
