@@ -18,13 +18,14 @@ public class AttackOrDepend implements Listener {
     }
 
     public static void left(Player p) {
-        if(!isCooldown(p)) {
+        if(!isCooldown(p)&&p.getItemInHand()!=null&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
             HitBoxBuilder builder = new HitBoxBuilder();
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
                     .setLocation(p.getLocation())
                     .setTick(10)
                     .setOwner(p).build(AttackHitBox.class);
+            p.setCooldown(Material.WOODEN_SWORD, 20);
         }
     }
 
