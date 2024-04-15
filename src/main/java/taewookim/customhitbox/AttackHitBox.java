@@ -36,6 +36,6 @@ public class AttackHitBox extends HitBox {
     @Override
     public void update() {
         super.update();
-        summonParticle();
+        //summonParticle();
     }
 }
