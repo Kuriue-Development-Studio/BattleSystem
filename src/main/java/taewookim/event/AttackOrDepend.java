@@ -25,7 +25,7 @@ public class AttackOrDepend implements Listener {
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
                     .setLocation(p.getLocation())
-                    .setTick(5)
+                    .setTick(9)
                     .setOwner(p).build(AttackHitBox.class);
             p.setCooldown(Material.WOODEN_SWORD, 20);
         }

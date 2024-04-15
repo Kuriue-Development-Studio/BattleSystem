@@ -15,7 +15,7 @@ public class AttackDisplay extends CustomDisplay {
     public AttackDisplay(Location loc, double roll) {
         super(loc, null);
         rotation(roll);
-        scale(3, 3, 3);
+        scale(6, 6, 6);
         i = new ItemStack(Material.DIAMOND_SWORD);
         m = i.getItemMeta();
         m.setCustomModelData(1);
@@ -26,11 +26,11 @@ public class AttackDisplay extends CustomDisplay {
     @Override
     public void update() {
         tick++;
-        if(tick>4) {
+        if(tick>8) {
             setEnd();
             return;
         }
-        m.setCustomModelData(tick);
+        m.setCustomModelData(tick/2);
         i.setItemMeta(m);
         setItem(i);
     }

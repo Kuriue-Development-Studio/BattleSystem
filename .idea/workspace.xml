@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="테스트용으로 패치">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackDisplay.java" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="공격 모션">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +177,7 @@
       <workItem from="1713101119953" duration="5033000" />
       <workItem from="1713180754707" duration="140000" />
       <workItem from="1713188448242" duration="398000" />
+      <workItem from="1713189214960" duration="919000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -300,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713106842691</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="공격 모션">
+      <option name="closed" value="true" />
+      <created>1713189527786</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713189527786</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +329,18 @@
     <MESSAGE value="소리 교체" />
     <MESSAGE value="피치수정" />
     <MESSAGE value="테스트용으로 패치" />
-    <option name="LAST_COMMIT_MESSAGE" value="테스트용으로 패치" />
+    <MESSAGE value="공격 모션" />
+    <option name="LAST_COMMIT_MESSAGE" value="공격 모션" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
