@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="디테일 추가">
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="테스트용으로 패치">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/AttackDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +176,9 @@
       <workItem from="1713097333965" duration="2316000" />
       <workItem from="1713099880376" duration="328000" />
       <workItem from="1713100978870" duration="135000" />
-      <workItem from="1713101119953" duration="2790000" />
+      <workItem from="1713101119953" duration="5033000" />
+      <workItem from="1713180754707" duration="140000" />
+      <workItem from="1713188448242" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -270,7 +276,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713105869482</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="소리 교체">
+      <option name="closed" value="true" />
+      <created>1713106129107</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713106129107</updated>
+    </task>
+    <task id="LOCAL-00014" summary="피치수정">
+      <option name="closed" value="true" />
+      <created>1713106245348</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713106245348</updated>
+    </task>
+    <task id="LOCAL-00015" summary="테스트용으로 패치">
+      <option name="closed" value="true" />
+      <created>1713106842691</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713106842691</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +319,9 @@
     <MESSAGE value="히트박스 생성위치 수정, 좀 더 랜덤적으로" />
     <MESSAGE value="실수" />
     <MESSAGE value="디테일 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="디테일 추가" />
+    <MESSAGE value="소리 교체" />
+    <MESSAGE value="피치수정" />
+    <MESSAGE value="테스트용으로 패치" />
+    <option name="LAST_COMMIT_MESSAGE" value="테스트용으로 패치" />
   </component>
 </project>

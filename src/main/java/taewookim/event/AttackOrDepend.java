@@ -7,7 +7,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import taewookim.ItemDisplayPlugin;
 import taewookim.customhitbox.AttackHitBox;
+import taewookim.polygondata.AttackDisplay;
 import taewookim.polygondata.AttackPolygon;
 import util.HitBoxBuilder;
 
@@ -23,7 +25,7 @@ public class AttackOrDepend implements Listener {
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
                     .setLocation(p.getLocation())
-                    .setTick(100)
+                    .setTick(5)
                     .setOwner(p).build(AttackHitBox.class);
             p.setCooldown(Material.WOODEN_SWORD, 20);
         }

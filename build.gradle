@@ -44,6 +44,7 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'taewookim:Minecraft_HitboxUtile:release@jar'
+    implementation 'taewookim:Minecraft_ItemDisplayUtile:release@jar'
     compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT' // The Spigot API with no shadowing. Requires the OSS repo.
     //compileOnly 'org.spigotmc:spigot:1.20.4-R0.1-SNAPSHOT' // The full Spigot server with no shadowing. Requires mavenLocal.
 }

@@ -3,6 +3,7 @@ package taewookim.polygondata;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
+import taewookim.ItemDisplayPlugin;
 import taewookim.collisiondetector.PolygonCollisionDetector;
 import util.PolygonDetectorBuilder;
 import util.TriangleMath;
@@ -49,6 +50,7 @@ public class AttackPolygon {
             int a = i*3;
             builder.addPoint(rotate(polygon[a], polygon[a+1], polygon[a+2], yaw, pitch, roll).add(loc));
         }
+        ItemDisplayPlugin.plugin.addCustomDisplay(new AttackDisplay(ploc, roll));
         return builder.build();
     }
 
