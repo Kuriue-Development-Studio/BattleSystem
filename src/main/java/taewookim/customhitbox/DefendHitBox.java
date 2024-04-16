@@ -39,7 +39,7 @@ public class DefendHitBox extends HitBox implements DefendBox {
             w.spawnParticle(Particle.SOUL_FIRE_FLAME, hitX, hitY, hitZ, 10, 0, 0, 0, 0.05);
             //w.playSound(new Location(w, hitX, hitY, hitZ), Sound.BLOCK_ANVIL_PLACE, 1, 2);
             p.setCooldown(Material.WOODEN_SWORD, 0);
-            p.setCooldown(Material.DIAMOND_SWORD, 20);
+            p.setCooldown(Material.DIAMOND_SWORD, 40);
         }
     }
 

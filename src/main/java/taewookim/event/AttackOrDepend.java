@@ -12,6 +12,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import taewookim.BattleSystemPlugin;
 import taewookim.ItemDisplayPlugin;
 import taewookim.customhitbox.AttackHitBox;
+import taewookim.customhitbox.CritAttackHitBox;
 import taewookim.customhitbox.DefendHitBox;
 import taewookim.polygondata.AttackDisplay;
 import taewookim.polygondata.AttackPolygon;
@@ -28,23 +29,12 @@ public class AttackOrDepend implements Listener {
     public static void left(Player p) {
         if(!isCooldown(p)&&p.getItemInHand()!=null&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
             Location loc = p.getLocation();
-            if(p.getCooldown(Material.DIAMOND_SWORD)>0) {
-                p.setVelocity(loc.getDirection().setY(0).multiply(2));
-                p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 0);
-                HitBoxBuilder builder = new HitBoxBuilder();
-                builder
-                        .addPolygonDetector(AttackPolygon.getPolygon(p))
-                        .setLocation(loc.add(loc.getDirection().multiply(2)))
-                        .setTick(6)
-                        .setOwner(p).build(DefendHitBox.class);
-                return;
-            }
             HitBoxBuilder builder = new HitBoxBuilder();
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
                     .setLocation(loc)
                     .setTick(6)
-                    .setOwner(p).build(AttackHitBox.class);
+                    .setOwner(p).build(p.getCooldown(Material.DIAMOND_SWORD)>0? CritAttackHitBox.class: AttackHitBox.class);
             p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
             p.setCooldown(Material.WOODEN_SWORD, 20);
         }
