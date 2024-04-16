@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="파티클 생성 제거">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/CritAttackHitBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/DefendHitBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendPolygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/RandomUtil.java" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="패링 타이밍 더 빡세게">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendPolygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendPolygon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +179,7 @@
       <workItem from="1713180754707" duration="140000" />
       <workItem from="1713188448242" duration="398000" />
       <workItem from="1713189214960" duration="1247000" />
-      <workItem from="1713250527747" duration="2685000" />
+      <workItem from="1713250527747" duration="5687000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -328,7 +325,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713190356052</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="패링 추가">
+      <option name="closed" value="true" />
+      <created>1713253218858</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713253218858</updated>
+    </task>
+    <task id="LOCAL-00020" summary="버그예측 패치">
+      <option name="closed" value="true" />
+      <created>1713253433519</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713253433519</updated>
+    </task>
+    <task id="LOCAL-00021" summary="패링 타이밍 더 빡세게">
+      <option name="closed" value="true" />
+      <created>1713254907399</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254907399</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +374,10 @@
     <MESSAGE value="공격 모션" />
     <MESSAGE value="너무 빠름" />
     <MESSAGE value="파티클 생성 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="파티클 생성 제거" />
+    <MESSAGE value="패링 추가" />
+    <MESSAGE value="버그예측 패치" />
+    <MESSAGE value="패링 타이밍 더 빡세게" />
+    <option name="LAST_COMMIT_MESSAGE" value="패링 타이밍 더 빡세게" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

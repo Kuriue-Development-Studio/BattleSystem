@@ -28,12 +28,12 @@ public class DefendPolygon {
         Location ploc = p.getLocation();
         double yaw = ploc.getYaw();
         double pitch = ploc.getPitch();
-        double roll = new Random().nextDouble()*360;
         Vector loc = ploc.add(0, 1.5, 0).toVector();
         for(int i = 0; i<3; i++) {
             int a = i*3;
-            builder.addPoint(AttackPolygon.rotate(polygon[a], polygon[a+1], polygon[a+2], yaw, pitch, roll).add(loc));
+            builder.addPoint(AttackPolygon.rotate(polygon[a], polygon[a+1], polygon[a+2], yaw, pitch, 0).add(loc));
         }
+        ItemDisplayPlugin.plugin.addCustomDisplay(new DefendDisplay(ploc));
         return builder.build();
     }
 

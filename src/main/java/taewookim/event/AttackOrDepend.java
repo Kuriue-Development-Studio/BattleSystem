@@ -35,7 +35,7 @@ public class AttackOrDepend implements Listener {
                 builder
                         .addPolygonDetector(AttackPolygon.getPolygon(p))
                         .setLocation(loc.add(loc.getDirection().multiply(2)))
-                        .setTick(9)
+                        .setTick(6)
                         .setOwner(p).build(DefendHitBox.class);
                 return;
             }
@@ -43,7 +43,7 @@ public class AttackOrDepend implements Listener {
             builder
                     .addPolygonDetector(AttackPolygon.getPolygon(p))
                     .setLocation(loc)
-                    .setTick(9)
+                    .setTick(6)
                     .setOwner(p).build(AttackHitBox.class);
             p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
             p.setCooldown(Material.WOODEN_SWORD, 20);
@@ -62,6 +62,7 @@ public class AttackOrDepend implements Listener {
                             .setLocation(p.getLocation())
                             .setTick(2)
                             .setOwner(p).build(DefendHitBox.class);
+
                 }
             });
         }
