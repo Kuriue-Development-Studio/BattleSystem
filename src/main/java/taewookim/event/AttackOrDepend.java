@@ -45,16 +45,10 @@ public class AttackOrDepend implements Listener {
             Location loc = p.getLocation();
             p.setCooldown(Material.WOODEN_SWORD, 60);
             p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
-            BattleSystemPlugin.plugin.addParryLate(new ParryLate(3, p) {
-                @Override
-                public void run() {
-                    new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
-                            .setLocation(p.getLocation())
-                            .setTick(20)
-                            .setOwner(p).build(DefendHitBox.class);
-
-                }
-            });
+            new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
+                    .setLocation(p.getLocation())
+                    .setTick(20)
+                    .setOwner(p).build(DefendHitBox.class);
         }
     }
 

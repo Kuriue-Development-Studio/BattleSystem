@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="테스트용 패치">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/DefendHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/DefendHitBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
-    </list>
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="패에에치" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +174,7 @@
       <workItem from="1713180754707" duration="140000" />
       <workItem from="1713188448242" duration="398000" />
       <workItem from="1713189214960" duration="1247000" />
-      <workItem from="1713250527747" duration="7664000" />
+      <workItem from="1713250527747" duration="8067000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -380,14 +376,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713269897582</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="패에에치">
+      <option name="closed" value="true" />
+      <created>1713270282389</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713270282389</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="시작" />
     <MESSAGE value="세팅" />
     <MESSAGE value="공격 히트박스 (임시)" />
     <MESSAGE value="쿨타임 추가 (임시)" />
@@ -412,7 +415,8 @@
     <MESSAGE value="update()" />
     <MESSAGE value="display 크기 감소" />
     <MESSAGE value="테스트용 패치" />
-    <option name="LAST_COMMIT_MESSAGE" value="테스트용 패치" />
+    <MESSAGE value="패에에치" />
+    <option name="LAST_COMMIT_MESSAGE" value="패에에치" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

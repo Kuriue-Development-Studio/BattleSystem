@@ -46,6 +46,5 @@ public class DefendHitBox extends HitBox implements DefendBox {
     @Override
     public void update() {
         super.update();
-        summonParticle();
     }
 }
