@@ -60,7 +60,7 @@ public class AttackOrDepend implements Listener {
                 public void run() {
                     new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
                             .setLocation(p.getLocation())
-                            .setTick(2)
+                            .setTick(20)
                             .setOwner(p).build(DefendHitBox.class);
 
                 }

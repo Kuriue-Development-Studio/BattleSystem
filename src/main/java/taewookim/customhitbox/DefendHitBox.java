@@ -1,7 +1,6 @@
 package taewookim.customhitbox;
 
-import org.bukkit.Location;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -36,8 +35,17 @@ public class DefendHitBox extends HitBox implements DefendBox {
     protected void collisionHitBox(HitBox hitBox) {
         if(hitBox instanceof AttackBox) {
             setEnd();
+            World w = getChunk().getWorld();
+            w.spawnParticle(Particle.SOUL_FIRE_FLAME, hitX, hitY, hitZ, 10, 0, 0, 0, 0.05);
+            //w.playSound(new Location(w, hitX, hitY, hitZ), Sound.BLOCK_ANVIL_PLACE, 1, 2);
             p.setCooldown(Material.WOODEN_SWORD, 0);
             p.setCooldown(Material.DIAMOND_SWORD, 20);
         }
+    }
+
+    @Override
+    public void update() {
+        super.update();
+        summonParticle();
     }
 }

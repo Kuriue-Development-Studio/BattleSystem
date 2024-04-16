@@ -17,9 +17,9 @@ public class DefendPolygon {
     static {
         double sqrt10 = 1d/Math.sqrt(10);
         polygon = new double[]{
-                -TriangleMath.cos(315), -TriangleMath.cos(315), 0.2f,
-                sqrt10, 3*sqrt10, 0.2f,
-                3*sqrt10, sqrt10, 0.2f
+                -TriangleMath.cos(315), -TriangleMath.cos(315), 0.5f,
+                sqrt10, 3*sqrt10, 0.5f,
+                3*sqrt10, sqrt10, 0.5f
         };
     }
 

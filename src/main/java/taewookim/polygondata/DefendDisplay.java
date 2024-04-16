@@ -10,7 +10,7 @@ public class DefendDisplay extends CustomDisplay {
     private int tick = 0;
 
     public DefendDisplay(Location loc) {
-        super(loc.add(loc.getDirection().multiply(0.2)), new ItemStack(Material.DIAMOND_SWORD));
+        super(loc.add(loc.getDirection().multiply(0.5)), new ItemStack(Material.DIAMOND_SWORD));
         rotation(-90);
         scale(1, 1, 1);
     }
@@ -18,7 +18,7 @@ public class DefendDisplay extends CustomDisplay {
     @Override
     public void update() {
         tick++;
-        if(tick>2) {
+        if(tick>20) {
             setEnd();
         }
     }
