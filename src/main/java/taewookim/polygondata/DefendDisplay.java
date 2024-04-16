@@ -10,9 +10,9 @@ public class DefendDisplay extends CustomDisplay {
     private int tick = 0;
 
     public DefendDisplay(Location loc) {
-        super(loc, new ItemStack(Material.DIAMOND_SWORD));
-        rotation(90);
-        scale(3, 3, 3);
+        super(loc.add(loc.getDirection().multiply(0.2)), new ItemStack(Material.DIAMOND_SWORD));
+        rotation(-90);
+        scale(1, 1, 1);
     }
 
     @Override

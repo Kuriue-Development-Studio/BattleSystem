@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="패링 타이밍 더 빡세게">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendPolygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/polygondata/DefendPolygon.java" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="수정">
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +176,7 @@
       <workItem from="1713180754707" duration="140000" />
       <workItem from="1713188448242" duration="398000" />
       <workItem from="1713189214960" duration="1247000" />
-      <workItem from="1713250527747" duration="5687000" />
+      <workItem from="1713250527747" duration="6186000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -349,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713254907399</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="수정">
+      <option name="closed" value="true" />
+      <created>1713260478519</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713260478519</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +382,8 @@
     <MESSAGE value="패링 추가" />
     <MESSAGE value="버그예측 패치" />
     <MESSAGE value="패링 타이밍 더 빡세게" />
-    <option name="LAST_COMMIT_MESSAGE" value="패링 타이밍 더 빡세게" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
