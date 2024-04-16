@@ -44,7 +44,6 @@ public class AttackOrDepend implements Listener {
         if(!isCooldown(p)) {
             Location loc = p.getLocation();
             p.setCooldown(Material.WOODEN_SWORD, 60);
-            p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
             new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
                     .setLocation(p.getLocation())
                     .setTick(20)
