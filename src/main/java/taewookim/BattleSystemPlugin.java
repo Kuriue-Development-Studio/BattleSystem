@@ -48,5 +48,6 @@ public class BattleSystemPlugin extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         Bukkit.getPluginManager().registerEvents(new AttackOrDepend(), this);
+        update();
     }
 }
