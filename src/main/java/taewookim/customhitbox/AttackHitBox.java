@@ -7,8 +7,9 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import taewookim.hitbox.HitBox;
+import taewookim.hitbox.type.AttackBox;
 
-public class AttackHitBox extends HitBox {
+public class AttackHitBox extends HitBox implements AttackBox {
     public AttackHitBox(Location mainloc, LivingEntity owner) {
         super(mainloc, owner);
     }
