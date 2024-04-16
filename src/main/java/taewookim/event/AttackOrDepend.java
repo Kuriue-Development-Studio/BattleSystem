@@ -9,6 +9,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import taewookim.BattleSystemPlugin;
 import taewookim.ItemDisplayPlugin;
 import taewookim.customhitbox.AttackHitBox;
 import taewookim.customhitbox.DefendHitBox;
@@ -16,6 +17,7 @@ import taewookim.polygondata.AttackDisplay;
 import taewookim.polygondata.AttackPolygon;
 import taewookim.polygondata.DefendPolygon;
 import util.HitBoxBuilder;
+import util.ParryLate;
 
 public class AttackOrDepend implements Listener {
 
@@ -53,10 +55,15 @@ public class AttackOrDepend implements Listener {
             Location loc = p.getLocation();
             p.setCooldown(Material.WOODEN_SWORD, 60);
             p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
-            new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
-                    .setLocation(p.getLocation())
-                    .setTick(4)
-                    .setOwner(p).build(DefendHitBox.class);
+            BattleSystemPlugin.plugin.addParryLate(new ParryLate(3, p) {
+                @Override
+                public void run() {
+                    new HitBoxBuilder().addPolygonDetector(DefendPolygon.getPolygon(p))
+                            .setLocation(p.getLocation())
+                            .setTick(2)
+                            .setOwner(p).build(DefendHitBox.class);
+                }
+            });
         }
     }
 
