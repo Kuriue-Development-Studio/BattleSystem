@@ -44,7 +44,6 @@ public class AttackOrDepend implements Listener {
         if(!isCooldown(p)) {
             Location loc = p.getLocation();
             p.setCooldown(Material.WOODEN_SWORD, 60);
-            p.getWorld().playSound(loc, Sound.ENTITY_PLAYER_ATTACK_SWEEP, 1, 1);
             BattleSystemPlugin.plugin.addParryLate(new ParryLate(5, p) {
                 @Override
                 public void run() {
