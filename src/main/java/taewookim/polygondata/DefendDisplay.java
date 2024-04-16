@@ -18,7 +18,7 @@ public class DefendDisplay extends CustomDisplay {
     @Override
     public void update() {
         tick++;
-        if(tick>20) {
+        if(tick>2) {
             setEnd();
         }
     }
