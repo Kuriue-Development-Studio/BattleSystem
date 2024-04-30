@@ -1,43 +1,78 @@
 plugins {
     id 'java'
+    id 'maven-publish'
+    id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
 }
 
 group = 'taewookim'
 version = 'release'
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
-repositories {
-    maven {
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+jar {
+    archiveName("${project.name}-${version}.jar")
+}
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId group
+            artifactId project.name
+            version version
 
-        // As of Gradle 5.1, you can limit this to only those
-        // dependencies you expect from it
-        content {
-            includeGroup 'org.bukkit'
-            includeGroup 'org.spigotmc'
+            artifact("build/libs/$project.name-$version" + ".jar") {
+                extension 'jar'
+            }
         }
     }
+    repositories {
+        maven {
+            credentials {
+                username = repoUsername
+                password = repoPassword
+            }
+            def releasesRepoUrl = "http://nexus.dominicus.kr:8081/repository/RPG/"
+            url = releasesRepoUrl
+            allowInsecureProtocol = true
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
     maven {
         credentials {
             username = repoUsername
             password = repoPassword
         }
-        def releasesRepoUrl = "http://nexus.dominicus.kr:8081/repository/RPG/"
-        url = releasesRepoUrl
+        url "http://nexus.dominicus.kr:8081/repository/RPG/"
         allowInsecureProtocol = true
     }
-    /*
-     As Spigot-API depends on the BungeeCord ChatComponent-API,
-    we need to add the Sonatype OSS repository, as Gradle,
-    in comparison to maven, doesn't want to understand the ~/.m2
-    directory unless added using mavenLocal(). Maven usually just gets
-    it from there, as most people have run the BuildTools at least once.
-    This is therefore not needed if you're using the full Spigot/CraftBukkit,
-    or if you're using the Bukkit API.
-    */
+
+    //NMS
+    maven {
+        url 'https://repo.dmulloy2.net/repository/public/'
+    }
+    maven {
+        url 'https://libraries.minecraft.net/'
+        metadataSources {
+            mavenPom()
+            artifact()
+            ignoreGradleMetadataRedirection()
+        }
+    }
+
+
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        content {
+            includeGroup 'org.bukkit'
+            includeGroup 'org.spigotmc'
+        }
+    }
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url = 'https://oss.sonatype.org/content/repositories/central' }
-    mavenCentral()
 }
 
 dependencies {
@@ -45,8 +80,18 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'taewookim:Minecraft_HitboxUtile:release@jar'
     implementation 'taewookim:Minecraft_ItemDisplayUtile:release@jar'
-    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT' // The Spigot API with no shadowing. Requires the OSS repo.
-    //compileOnly 'org.spigotmc:spigot:1.20.4-R0.1-SNAPSHOT' // The full Spigot server with no shadowing. Requires mavenLocal.
+    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+    //compileOnly 'org.spigotmc:spigot:1.20.4-R0.1-SNAPSHOT'
+}
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+build {
+    sourceCompatibility = 17
+    targetCompatibility = 17
 }
 
 test {
