@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import taewookim.BattleSystemPlugin;
@@ -72,7 +73,7 @@ public class AttackOrDepend implements Listener {
 
     @EventHandler
     public void damage(EntityDamageByEntityEvent e) {
-        if(e.getDamager() instanceof Player p) {
+        if(!e.getCause().equals(EntityDamageEvent.DamageCause.CUSTOM)&&e.getDamager() instanceof Player p) {
             left(p);
             e.setCancelled(true);
         }

@@ -3,6 +3,7 @@ package taewookim.customhitbox;
 import org.bukkit.*;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import taewookim.BattleSystemPlugin;
 import taewookim.hitbox.HitBox;
 import taewookim.hitbox.type.AttackBox;
 import util.RandomUtil;
@@ -26,7 +27,7 @@ public class CritAttackHitBox extends HitBox implements AttackBox {
     @Override
     protected void enterHitBox(Entity entity) {
         if(entity instanceof LivingEntity le) {
-            le.damage(10);
+            BattleSystemPlugin.Damage(getOwner(), le, BattleSystemPlugin.getDamage(getOwner())*5);
             World w = le.getWorld();
             Location loc = entity.getLocation().add(0, 1.5, 0);
             w.playSound(loc, Sound.ENTITY_ZOMBIE_VILLAGER_CURE, 1, 2);

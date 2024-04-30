@@ -6,6 +6,7 @@ import org.bukkit.Sound;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import taewookim.BattleSystemPlugin;
 import taewookim.hitbox.HitBox;
 import taewookim.hitbox.type.AttackBox;
 
@@ -17,7 +18,7 @@ public class AttackHitBox extends HitBox implements AttackBox {
     @Override
     protected void enterHitBox(Entity entity) {
         if(entity instanceof LivingEntity le) {
-            le.damage(2);
+            BattleSystemPlugin.Damage(getOwner(), le, BattleSystemPlugin.getDamage(getOwner()));
         }
     }
 
