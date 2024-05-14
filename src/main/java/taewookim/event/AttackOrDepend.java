@@ -28,7 +28,7 @@ public class AttackOrDepend implements Listener {
     }
 
     public static void left(Player p) {
-        if(!isCooldown(p)&&p.getItemInHand()!=null&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
+        if(!isCooldown(p)&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
             Location loc = p.getLocation();
             HitBoxBuilder builder = new HitBoxBuilder();
             builder
@@ -42,7 +42,7 @@ public class AttackOrDepend implements Listener {
     }
 
     public static void right(Player p) {
-        if(!isCooldown(p)) {
+        if(!isCooldown(p)&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
             Location loc = p.getLocation();
             p.setCooldown(Material.WOODEN_SWORD, 60);
             BattleSystemPlugin.plugin.addParryLate(new ParryLate(5, p) {

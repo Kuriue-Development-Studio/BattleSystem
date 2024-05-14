@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="방어 소리 제거">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="Damage() 함수 추가 getDamage()함수 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +41,12 @@
                 <item name="Minecraft_BattleSystem" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Minecraft_BattleSystem" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -90,6 +95,8 @@
     &quot;Gradle.Build Minecraft_BattleSystem.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Minecraft_BattleSystem [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Minecraft_BattleSystem [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Minecraft_BattleSystem [publish].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -106,7 +113,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [build]">
+  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]">
     <configuration name="Minecraft_BattleSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -151,8 +158,54 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishAllPublicationsToMavenRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Minecraft_BattleSystem [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" />
+        <item itemvalue="Gradle.Minecraft_BattleSystem [publish]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [dependencies]" />
       </list>
@@ -161,8 +214,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.69" />
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-IU-241.15989.69" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-25a4bffe" />
       </set>
     </attachedChunks>
   </component>
@@ -195,6 +247,12 @@
       <workItem from="1713250527747" duration="8067000" />
       <workItem from="1713271865757" duration="977000" />
       <workItem from="1714462148232" duration="199000" />
+      <workItem from="1714464824783" duration="302000" />
+      <workItem from="1714465221628" duration="13000" />
+      <workItem from="1714465298177" duration="21000" />
+      <workItem from="1714465709533" duration="10000" />
+      <workItem from="1714465730456" duration="2000" />
+      <workItem from="1715670229784" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -420,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713272178642</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Damage() 함수 추가 getDamage()함수 추가">
+      <option name="closed" value="true" />
+      <created>1714465065355</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714465065355</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="쿨타임 추가 (임시)" />
     <MESSAGE value="오타 수정" />
     <MESSAGE value="이벤트" />
     <MESSAGE value="공격시 캔슬" />
@@ -463,17 +528,7 @@
     <MESSAGE value="패에에치" />
     <MESSAGE value="패링 쉽게" />
     <MESSAGE value="방어 소리 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="방어 소리 제거" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Damage() 함수 추가 getDamage()함수 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Damage() 함수 추가 getDamage()함수 추가" />
   </component>
 </project>
