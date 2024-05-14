@@ -18,7 +18,7 @@ public class AttackHitBox extends HitBox implements AttackBox {
     @Override
     protected void enterHitBox(Entity entity) {
         if(entity instanceof LivingEntity le) {
-            BattleSystemPlugin.Damage(getOwner(), le, BattleSystemPlugin.getDamage(getOwner()));
+            //BattleSystemPlugin.Damage(getOwner(), le, BattleSystemPlugin.getDamage(getOwner()));
         }
     }
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="Damage() 함수 추가 getDamage()함수 추가">
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="버그 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/customhitbox/AttackHitBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]">
+  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [build]">
     <configuration name="Minecraft_BattleSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,9 +204,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publish]" />
-        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [dependencies]" />
       </list>
     </recent_temporary>
@@ -252,7 +252,10 @@
       <workItem from="1714465298177" duration="21000" />
       <workItem from="1714465709533" duration="10000" />
       <workItem from="1714465730456" duration="2000" />
-      <workItem from="1715670229784" duration="494000" />
+      <workItem from="1715670229784" duration="686000" />
+      <workItem from="1715675693939" duration="193000" />
+      <workItem from="1715682870848" duration="587000" />
+      <workItem from="1715684945340" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="시작">
       <option name="closed" value="true" />
@@ -486,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714465065355</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="버그 수정">
+      <option name="closed" value="true" />
+      <created>1715670766074</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715670766074</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="오타 수정" />
     <MESSAGE value="이벤트" />
     <MESSAGE value="공격시 캔슬" />
     <MESSAGE value="작동되고 있는거 맞나요" />
@@ -529,6 +539,7 @@
     <MESSAGE value="패링 쉽게" />
     <MESSAGE value="방어 소리 제거" />
     <MESSAGE value="Damage() 함수 추가 getDamage()함수 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="Damage() 함수 추가 getDamage()함수 추가" />
+    <MESSAGE value="버그 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="버그 수정" />
   </component>
 </project>
