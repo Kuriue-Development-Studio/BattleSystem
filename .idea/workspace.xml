@@ -113,7 +113,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [build]">
+  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]">
     <configuration name="Minecraft_BattleSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,9 +204,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publish]" />
+        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [dependencies]" />
       </list>
     </recent_temporary>
