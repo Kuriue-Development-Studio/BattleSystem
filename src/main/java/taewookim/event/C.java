@@ -28,7 +28,7 @@ public class C implements PacketPlayInUseEntity.c {
 
     @Override
     public void a() {
-        AttackOrDepend.left(p);
+        AttackOrDepend.leftlate(p);
         b = true;
     }
 }

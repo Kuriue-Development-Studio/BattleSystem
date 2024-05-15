@@ -41,6 +41,15 @@ public class AttackOrDepend implements Listener {
         }
     }
 
+    public static void leftlate(Player p) {
+        BattleSystemPlugin.plugin.addParryLate(new ParryLate(0, p) {
+            @Override
+            public void run() {
+                left(p);
+            }
+        });
+    }
+
     public static void right(Player p) {
         if(!isCooldown(p)&&p.getItemInHand().getType().equals(Material.WOODEN_SWORD)) {
             Location loc = p.getLocation();

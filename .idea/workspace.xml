@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="PacketReader 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="더이상 공격을 cancel하지 않습니다.&#10;PacketReader에서 플레이어가 엔티티에게 좌클릭하는 패킷은 받지 않고 검기를 생성합니다.">
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/PacketReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/PacketReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/C.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]">
+  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [build]">
     <configuration name="Minecraft_BattleSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,9 +204,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publish]" />
-        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [dependencies]" />
       </list>
     </recent_temporary>
@@ -506,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715751574537</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="더이상 공격을 cancel하지 않습니다.&#10;PacketReader에서 플레이어가 엔티티에게 좌클릭하는 패킷은 받지 않고 검기를 생성합니다.">
+      <created>1715756183215</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1715756183215</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="공격시 캔슬" />
     <MESSAGE value="작동되고 있는거 맞나요" />
     <MESSAGE value="다시..." />
     <MESSAGE value="히트박스 생성위치 수정, 좀 더 랜덤적으로" />
@@ -549,6 +553,7 @@
     <MESSAGE value="Damage() 함수 추가 getDamage()함수 추가" />
     <MESSAGE value="버그 수정" />
     <MESSAGE value="PacketReader 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="PacketReader 추가" />
+    <MESSAGE value="더이상 공격을 cancel하지 않습니다.&#10;PacketReader에서 플레이어가 엔티티에게 좌클릭하는 패킷은 받지 않고 검기를 생성합니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="더이상 공격을 cancel하지 않습니다.&#10;PacketReader에서 플레이어가 엔티티에게 좌클릭하는 패킷은 받지 않고 검기를 생성합니다." />
   </component>
 </project>
