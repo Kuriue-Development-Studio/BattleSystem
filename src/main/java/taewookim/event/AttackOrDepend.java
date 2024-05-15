@@ -72,14 +72,6 @@ public class AttackOrDepend implements Listener {
     }
 
     @EventHandler
-    public void damage(EntityDamageByEntityEvent e) {
-        if(!e.getCause().equals(EntityDamageEvent.DamageCause.CUSTOM)&&e.getDamager() instanceof Player p) {
-            left(p);
-            e.setCancelled(true);
-        }
-    }
-
-    @EventHandler
     public void interentity(PlayerInteractEntityEvent e) {
         right(e.getPlayer());
     }

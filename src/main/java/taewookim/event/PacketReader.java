@@ -3,8 +3,12 @@ package taewookim.event;
 import io.netty.channel.*;
 import jdk.jfr.Enabled;
 import net.minecraft.network.NetworkManager;
+import net.minecraft.network.protocol.game.PacketPlayInUseEntity;
 import net.minecraft.server.network.PlayerConnection;
+import net.minecraft.world.EnumHand;
+import net.minecraft.world.phys.Vec3D;
 import org.bukkit.craftbukkit.v1_20_R3.entity.CraftPlayer;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -17,9 +21,16 @@ public class PacketReader implements Listener {
     @EventHandler
     public void join(PlayerJoinEvent e) {
         ChannelDuplexHandler handler = new ChannelDuplexHandler() {
+            private Player player = e.getPlayer();
             @Override
             public void channelRead(ChannelHandlerContext channelHandlerContext, Object packet) throws Exception {
-                System.out.println(packet.getClass().getName());
+                if(packet instanceof PacketPlayInUseEntity pac) {
+                    C c = new C(player);
+                    pac.a(c);
+                    if(c.isB()) {
+                        return;
+                    }
+                }
                 super.channelRead(channelHandlerContext, packet);
             }
         };

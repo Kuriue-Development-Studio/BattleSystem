@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="버그 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/PacketReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9c4ec19c-4fe1-41e2-a6e3-28dce3ceba1c" name="Changes" comment="PacketReader 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/C.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/BattleSystemPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/AttackOrDepend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/event/PacketReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/event/PacketReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [build]">
+  <component name="RunManager" selected="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]">
     <configuration name="Minecraft_BattleSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,9 +206,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publishAllPublicationsToMavenRepository]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [publish]" />
+        <item itemvalue="Gradle.Minecraft_BattleSystem [build]" />
         <item itemvalue="Gradle.Minecraft_BattleSystem [dependencies]" />
       </list>
     </recent_temporary>
@@ -499,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715670766074</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="PacketReader 추가">
+      <created>1715751574537</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715751574537</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="이벤트" />
     <MESSAGE value="공격시 캔슬" />
     <MESSAGE value="작동되고 있는거 맞나요" />
     <MESSAGE value="다시..." />
@@ -542,6 +548,7 @@
     <MESSAGE value="방어 소리 제거" />
     <MESSAGE value="Damage() 함수 추가 getDamage()함수 추가" />
     <MESSAGE value="버그 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="버그 수정" />
+    <MESSAGE value="PacketReader 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="PacketReader 추가" />
   </component>
 </project>
