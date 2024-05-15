@@ -13,6 +13,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import taewookim.event.AttackOrDepend;
+import taewookim.event.PacketReader;
 import util.ParryLate;
 
 import java.util.ArrayList;
@@ -40,8 +41,7 @@ public class BattleSystemPlugin extends JavaPlugin {
     }
 
     public static void Damage(Entity damager, LivingEntity target, double damage) {
-        //아래 오류가 나지만 무시(무시하고 빌드)
-        Bukkit.getPluginManager().callEvent(new EntityDamageByEntityEvent(damager, target, EntityDamageEvent.DamageCause.CUSTOM, damage));
+        target.damage(damage, damager);
     }
 
     private void update() {
@@ -68,6 +68,7 @@ public class BattleSystemPlugin extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         Bukkit.getPluginManager().registerEvents(new AttackOrDepend(), this);
+        Bukkit.getPluginManager().registerEvents(new PacketReader(), this);
         update();
     }
 }
