@@ -7,7 +7,7 @@ import net.minecraft.network.protocol.game.PacketPlayInUseEntity;
 import net.minecraft.server.network.PlayerConnection;
 import net.minecraft.world.EnumHand;
 import net.minecraft.world.phys.Vec3D;
-import org.bukkit.craftbukkit.v1_20_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -36,7 +36,7 @@ public class PacketReader implements Listener {
         };
         PlayerConnection pc = ((CraftPlayer) e.getPlayer()).getHandle().c;
         try{
-            NetworkManager manager = (NetworkManager) pc.getClass().getField("c").get(pc);
+            NetworkManager manager = (NetworkManager) pc.getClass().getField("e").get(pc);
             ChannelPipeline pipeline = manager.n.pipeline();
             pipeline.addBefore("packet_handler", e.getPlayer().getName(), handler);
         }catch(Exception ea) {

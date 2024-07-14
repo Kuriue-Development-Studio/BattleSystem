@@ -19,7 +19,7 @@ public class CritAttackHitBox extends HitBox implements AttackBox {
     public static void spawnCitParticle(Location loc) {
         Random r = RandomUtil.random;
         for(int i = 0; i<10; i++) {
-            loc.getWorld().spawnParticle(Particle.REDSTONE, loc, 0, r.nextFloat()-0.5, r.nextFloat()-0.5, r.nextFloat()-0.5, 1, new Particle.DustOptions(Color.RED, 1));
+            //loc.getWorld().spawnParticle(Particle.DUST, loc, 0, r.nextFloat()-0.5, r.nextFloat()-0.5, r.nextFloat()-0.5, 1, new Particle.DustOptions(Color.RED, 1));
             loc.getWorld().spawnParticle(Particle.CRIT, loc, 0, r.nextFloat()-0.5, r.nextFloat()-0.5, r.nextFloat()-0.5, 1);
         }
     }
