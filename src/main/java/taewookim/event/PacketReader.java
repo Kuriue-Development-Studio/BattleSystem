@@ -48,7 +48,7 @@ public class PacketReader implements Listener {
     public void quit(PlayerQuitEvent e) {
         PlayerConnection pc = ((CraftPlayer) e.getPlayer()).getHandle().c;
         try{
-            NetworkManager manager = (NetworkManager) pc.getClass().getField("c").get(pc);
+            NetworkManager manager = (NetworkManager) pc.getClass().getField("e").get(pc);
             Channel channel = manager.n;
             channel.eventLoop().submit(()->{
                 channel.pipeline().remove(e.getPlayer().getName());
