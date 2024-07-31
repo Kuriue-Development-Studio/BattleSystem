@@ -31,9 +31,9 @@ publishing {
                 username = repoUsername
                 password = repoPassword
             }
-            def releasesRepoUrl = "http://nexus.dominicus.kr:8081/repository/RPG/"
+            def releasesRepoUrl = "https://nexus.dominicus.kr/repository/RPG/"
             url = releasesRepoUrl
-            allowInsecureProtocol = true
+        
         }
     }
 }
@@ -46,8 +46,7 @@ repositories {
             username = repoUsername
             password = repoPassword
         }
-        url "http://nexus.dominicus.kr:8081/repository/RPG/"
-        allowInsecureProtocol = true
+        url "https://nexus.dominicus.kr/repository/RPG/"
     }
 
     //NMS
